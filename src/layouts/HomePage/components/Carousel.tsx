@@ -29,14 +29,14 @@ export const Carousel = () => {
 
                 for (const key in responseData){
                     loadedBooks.push({
-                        id: responseData[key].id,
-                        title: responseData[key].title,
-                        author: responseData[key].author,
-                        description: responseData[key].description,
-                        copies: responseData[key].copies,
-                        copiesAvailable: responseData[key].copiesAvailable,
-                        img: responseData[key].img,
-
+                      id: responseData[key].id,
+                      title: responseData[key].title,
+                      author: responseData[key].author,
+                      description: responseData[key].description,
+                      copies: responseData[key].copies,
+                      copiesAvailable: responseData[key].copiesAvailable,
+                      category: responseData[key].category,
+                      img: responseData[key].img,
                     });
                 }
                 setBooks(loadedBooks);
